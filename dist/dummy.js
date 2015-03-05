@@ -1,6 +1,6 @@
 /**
  * dummy - Dummy project - used as a starting point for new libraries
- * @version v4.2.13
+ * @version v5.0.0-0
  * @link https://github.com/cheminfo-js/dummy
  * @license MIT
  */
@@ -8,6 +8,7 @@
 'use strict';
 
 module.exports = function () {
+    // returns true
     return true;
 };
 

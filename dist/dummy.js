@@ -1,6 +1,6 @@
 /**
  * dummy - Dummy project - used as a starting point for new libraries
- * @version v4.2.8
+ * @version v4.2.9
  * @link https://github.com/cheminfo-js/dummy
  * @license MIT
  */

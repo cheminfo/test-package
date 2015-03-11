@@ -1,6 +1,6 @@
 /**
  * test - Dummy project - used as a starting point for new libraries
- * @version v5.3.2
+ * @version v5.4.0
  * @link https://github.com/cheminfo-js/test
  * @license MIT
  */

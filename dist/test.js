@@ -1,6 +1,6 @@
 /**
  * test - Dummy project - used as a starting point for new libraries
- * @version v5.4.3
+ * @version v5.5.0
  * @link https://github.com/cheminfo-js/test
  * @license MIT
  */
@@ -9,6 +9,7 @@
 
 module.exports = function () {
     // returns true
+    // comment
     return true;
 };
 

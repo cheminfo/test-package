@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "mocha --require should --reporter mocha-better-spec-reporter --recursive",
-    "build": "cheminfo build"
+    "build": "cheminfo build",
+    "deploy": "echo 1"
   },
   "devDependencies": {
     "cheminfo-tools": "^1.0.2",

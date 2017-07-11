@@ -1,3 +1,8 @@
+<a name="6.0.16"></a>
+## [6.0.16](https://github.com/cheminfo-js/test/compare/v6.0.15...v6.0.16) (2017-07-11)
+
+
+
 <a name="6.0.15"></a>
 ## [6.0.15](https://github.com/cheminfo-js/test/compare/v6.0.14...v6.0.15) (2017-07-11)
 

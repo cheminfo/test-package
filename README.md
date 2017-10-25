@@ -30,6 +30,7 @@ Dummy project - used as a starting point for new libraries
 
 `npm test`
 
+
 ### Build dist files
 
 `npm run build`

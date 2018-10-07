@@ -6,6 +6,7 @@
   [![npm download][download-image]][download-url]
 
 Dummy project - used as a starting point for new libraries
+THIS IS A TEST.
 
 ## Configuration
 

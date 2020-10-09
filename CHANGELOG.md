@@ -1,5 +1,12 @@
 # Changelog
 
+### [6.1.3](https://www.github.com/cheminfo-js/test/compare/v6.1.2...v6.1.3) (2020-10-09)
+
+
+### Bug Fixes
+
+* remove bad text ([56bf2ac](https://www.github.com/cheminfo-js/test/commit/56bf2acb1ddddf0a84cc50dae43768e91b961bd9))
+
 ### [6.1.2](https://github.com/cheminfo-js/test/compare/v6.1.1...v6.1.2) (2020-10-09)
 
 ## [6.1.1](https://github.com/cheminfo-js/test/compare/v6.1.0...v6.1.1) (2019-06-30)

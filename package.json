@@ -18,14 +18,10 @@
   "license": "MIT",
   "main": "./src/index.js",
   "exports": {
-    "commonjs": "./lib/index.js",
+    "require": "./lib/index.js",
     "default": "./src/index.js"
   },
   "type": "module",
-  "directories": {
-    "lib": "src",
-    "test": "test"
-  },
   "scripts": {
     "test": "npm run test-only && npm run eslint",
     "test-only": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",

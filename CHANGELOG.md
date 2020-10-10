@@ -1,5 +1,12 @@
 # Changelog
 
+### [7.0.2](https://www.github.com/cheminfo-js/test/compare/v7.0.1...v7.0.2) (2020-10-10)
+
+
+### Bug Fixes
+
+* use a test token ([3a9078d](https://www.github.com/cheminfo-js/test/commit/3a9078ddd3770000238f12ebde9a3d9f65b5d019))
+
 ### [7.0.1](https://www.github.com/cheminfo-js/test/compare/v7.0.0...v7.0.1) (2020-10-10)
 
 

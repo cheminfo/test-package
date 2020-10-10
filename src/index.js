@@ -1,8 +1,9 @@
-'use strict';
+export default function theDefaultExport() {
+  return 42;
+}
 
-module.exports = function named() {
-    // returns true
-    // comment
-    // hello
-    return true;
-};
+export let value = 0;
+
+export function incrementValue() {
+  value++;
+}

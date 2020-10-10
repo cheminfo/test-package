@@ -11,23 +11,38 @@
   "bugs": {
     "url": "https://github.com/cheminfo-js/test/issues"
   },
+  "jest": {
+    "transform": {}
+  },
   "homepage": "https://github.com/cheminfo-js/test",
   "license": "MIT",
   "main": "./src/index.js",
+  "exports": {
+    "commonjs": "./lib/index.js",
+    "default": "./src/index.js"
+  },
+  "type": "module",
   "directories": {
     "lib": "src",
     "test": "test"
   },
   "scripts": {
     "test": "npm run test-only && npm run eslint",
-    "test-only": "jest",
-    "test-coverage": "jest --coverage",
-    "build": "cheminfo build",
+    "test-only": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test-coverage": "npm run test-only -- --coverage",
+    "build": "cheminfo-build",
     "deploy": "echo 1",
     "eslint": "echo 2"
   },
   "devDependencies": {
     "cheminfo-build": "^1.1.6",
     "jest": "^26.5.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
   }
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+### [7.0.1](https://www.github.com/cheminfo-js/test/compare/v7.0.0...v7.0.1) (2020-10-10)
+
+
+### Bug Fixes
+
+* change release event to published ([1770190](https://www.github.com/cheminfo-js/test/commit/1770190a6ffc2e6465a8163aa9347bfb8dc8bd66))
+
 ## [7.0.0](https://www.github.com/cheminfo-js/test/compare/v6.1.3...v7.0.0) (2020-10-10)
 
 

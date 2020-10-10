@@ -1,5 +1,23 @@
 # Changelog
 
+## [7.0.0](https://www.github.com/cheminfo-js/test/compare/v6.1.3...v7.0.0) (2020-10-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove tests on Node.js 10
+* The function is now named.
+
+### Features
+
+* add a name to the function ([f00608e](https://www.github.com/cheminfo-js/test/commit/f00608eeea57ef9f568173f9e06ff8cd2c7294d9))
+* convert to ESM ([2b4020a](https://www.github.com/cheminfo-js/test/commit/2b4020a9f8c33022a4ea1739ef0869e69d791266))
+
+
+### Miscellaneous Chores
+
+* remove tests on Node.js 10 ([d4c671f](https://www.github.com/cheminfo-js/test/commit/d4c671f9d91c7869a6384a0ba66ff8b5025b5e08))
+
 ### [6.1.3](https://www.github.com/cheminfo-js/test/compare/v6.1.2...v6.1.3) (2020-10-09)
 
 

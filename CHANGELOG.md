@@ -1,5 +1,12 @@
 # Changelog
 
+### [7.0.3](https://www.github.com/cheminfo-js/test/compare/v7.0.2...v7.0.3) (2020-10-10)
+
+
+### Bug Fixes
+
+* use BOT_TOKEN ([92e6b54](https://www.github.com/cheminfo-js/test/commit/92e6b545e3c6a5129d55cd15cb48df8c80a4cc88))
+
 ### [7.0.2](https://www.github.com/cheminfo-js/test/compare/v7.0.1...v7.0.2) (2020-10-10)
 
 

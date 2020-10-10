@@ -19,15 +19,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --require should --reporter mocha-better-spec-reporter --recursive",
+    "test": "npm run test-only && npm run eslint",
+    "test-only": "jest",
+    "test-coverage": "jest --coverage",
     "build": "cheminfo build",
     "deploy": "echo 1",
     "eslint": "echo 2"
   },
   "devDependencies": {
     "cheminfo-build": "^1.1.6",
-    "mocha": "^8.1.3",
-    "mocha-better-spec-reporter": "^3.1.0",
-    "should": "^13.2.3"
+    "jest": "^26.5.2"
   }
 }

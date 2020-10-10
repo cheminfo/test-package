@@ -5,6 +5,8 @@
 
 THIS IS A TEST.
 
+## [API documentaion](http://cheminfo-js.github.io/test/)
+
 ## Development
 
 ### Install dev dependencies

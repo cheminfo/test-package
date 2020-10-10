@@ -1,11 +1,11 @@
-name: Build documentation
+name: Deploy documentation on GitHub pages
 
 on:
   release:
     types: [published]
 
 jobs:
-  documentation:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

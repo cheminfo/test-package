@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.1.0](https://www.github.com/cheminfo-js/test/compare/v7.0.3...v7.1.0) (2020-10-10)
+
+
+### Features
+
+* add action to deploy to lactame ([5649d05](https://www.github.com/cheminfo-js/test/commit/5649d05ed8d6f864d1c31d0af9ed8a22d265d4f2))
+
 ### [7.0.3](https://www.github.com/cheminfo-js/test/compare/v7.0.2...v7.0.3) (2020-10-10)
 
 

@@ -1,0 +1,15 @@
+  
+name: Node.js CI
+
+on:
+  push:
+    branches: master
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zakodium/npm-action@v0.0.1
+        with:
+          script-name: eslint

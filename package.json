@@ -21,7 +21,8 @@
   "scripts": {
     "test": "mocha --require should --reporter mocha-better-spec-reporter --recursive",
     "build": "cheminfo build",
-    "deploy": "echo 1"
+    "deploy": "echo 1",
+    "eslint": "echo 2"
   },
   "devDependencies": {
     "cheminfo-build": "^1.1.6",

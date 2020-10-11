@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
 
-THIS IS A TEST.
+THIS IS A TEST!
 
 ## [API documentaion](http://cheminfo-js.github.io/test/)
 

@@ -1,5 +1,12 @@
 # Changelog
 
+### [7.1.1](https://www.github.com/cheminfo-js/test/compare/v7.1.0...v7.1.1) (2020-10-11)
+
+
+### Bug Fixes
+
+* change ownership of npm package ([bcef7d0](https://www.github.com/cheminfo-js/test/commit/bcef7d026768f869b66bac36acf917698880a34a))
+
 ## [7.1.0](https://www.github.com/cheminfo-js/test/compare/v7.0.3...v7.1.0) (2020-10-10)
 
 

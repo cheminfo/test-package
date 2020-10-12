@@ -1,5 +1,12 @@
 # Changelog
 
+### [7.2.1](https://www.github.com/cheminfo-js/test/compare/v7.2.0...v7.2.1) (2020-10-12)
+
+
+### Bug Fixes
+
+* add missing feature ([f674d64](https://www.github.com/cheminfo-js/test/commit/f674d64689777e41f07b2a875b83127049d36ab9))
+
 ## [7.2.0](https://www.github.com/cheminfo-js/test/compare/v7.1.1...v7.2.0) (2020-10-12)
 
 

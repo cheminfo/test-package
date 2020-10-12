@@ -18,3 +18,7 @@ export let value = 0;
 export function incrementValue() {
   value++;
 }
+
+export function feature() {
+  return 'cool';
+}

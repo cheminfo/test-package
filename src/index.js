@@ -20,5 +20,5 @@ export function incrementValue() {
 }
 
 export function feature() {
-  return 'cool';
+  return 'cool feature';
 }

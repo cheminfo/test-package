@@ -10,4 +10,6 @@ jobs:
     steps:
       - name: Request Fast-Track
         if: github.event.label.name == 'fast-track'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr comment "Fast-track has been requested. Please 👍 to approve."

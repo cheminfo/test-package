@@ -1,0 +1,13 @@
+name: Request PR Fast-track
+on:
+  pull_request_target:
+    types: [labeled]
+
+jobs:
+  fastTrack:
+    if: github.repository == 'cheminfo-js/test'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request Fast-Track
+        if: github.event.label.name == 'fast-track'
+      - run: gh pr comment "Fast-track has been requested. Please 👍 to approve."

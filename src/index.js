@@ -22,3 +22,7 @@ export function incrementValue() {
 export function feature() {
   return 'cool feature';
 }
+
+export function something() {
+  return 'something';
+}

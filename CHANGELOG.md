@@ -1,5 +1,39 @@
 # Changelog
 
+## [8.0.0](https://www.github.com/cheminfo-js/test/compare/v7.2.1...v8.0.0) (2021-06-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* There is a breaking change
+* Another breaking change
+* Final breaking change
+* first change
+* other change
+* another thing was done
+* The fast-tracking feature was removed.
+* other change
+
+### Features
+
+* add something ([7872d79](https://www.github.com/cheminfo-js/test/commit/7872d795c3d9d224c71a62c970ec356f9d30e24e))
+* first change ([75ddeb7](https://www.github.com/cheminfo-js/test/commit/75ddeb72ce6ca34a1ae2113e7eb172fef87a865a))
+* no more fast-tracking ([94188ea](https://www.github.com/cheminfo-js/test/commit/94188ea709a20c75b99366d5bb36042e96daa035))
+* other change ([75ddeb7](https://www.github.com/cheminfo-js/test/commit/75ddeb72ce6ca34a1ae2113e7eb172fef87a865a))
+* restore something ([18dd9e2](https://www.github.com/cheminfo-js/test/commit/18dd9e2377d29b6a638915475ef1e2db40d3c824))
+
+
+### Miscellaneous Chores
+
+* remove fast-track.yml ([94188ea](https://www.github.com/cheminfo-js/test/commit/94188ea709a20c75b99366d5bb36042e96daa035))
+* update release workflow ([aa9c24e](https://www.github.com/cheminfo-js/test/commit/aa9c24e0a229e93845de160e44d276ac6506219c))
+
+
+### Code Refactoring
+
+* Another breaking change ([18dd9e2](https://www.github.com/cheminfo-js/test/commit/18dd9e2377d29b6a638915475ef1e2db40d3c824))
+* There is a breaking change ([18dd9e2](https://www.github.com/cheminfo-js/test/commit/18dd9e2377d29b6a638915475ef1e2db40d3c824))
+
 ### [7.2.1](https://www.github.com/cheminfo-js/test/compare/v7.2.0...v7.2.1) (2020-10-12)
 
 

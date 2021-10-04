@@ -20,7 +20,7 @@ export function incrementValue() {
 }
 
 export function feature() {
-  return 'cool feature';
+  return 'cool';
 }
 
 export function something() {

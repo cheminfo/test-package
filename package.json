@@ -28,9 +28,9 @@
   "scripts": {
     "check-types": "tsc --noEmit",
     "clean": "rimraf lib lib-esm",
-    "eslint": "bad1",
+    "eslint": "eslint src",
     "prepack": "npm run tsc",
-    "prettier": "bad2",
+    "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
     "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
     "test-only": "jest --coverage",

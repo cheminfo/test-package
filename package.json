@@ -26,7 +26,7 @@
     "default": "./lib-esm/index.js"
   },
   "scripts": {
-    "check-types": "bad3",
+    "check-types": "tsc --noEmit",
     "clean": "rimraf lib lib-esm",
     "eslint": "bad1",
     "prepack": "npm run tsc",

@@ -26,11 +26,11 @@
     "default": "./lib-esm/index.js"
   },
   "scripts": {
-    "check-types": "tsc --noEmit",
+    "check-types": "bad3",
     "clean": "rimraf lib lib-esm",
-    "eslint": "eslint src",
+    "eslint": "bad1",
     "prepack": "npm run tsc",
-    "prettier": "prettier --check src",
+    "prettier": "bad2",
     "prettier-write": "prettier --write src",
     "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
     "test-only": "jest --coverage",

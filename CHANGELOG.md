@@ -1,5 +1,12 @@
 # Changelog
 
+### [8.0.1](https://www.github.com/cheminfo-js/test/compare/v8.0.0...v8.0.1) (2021-10-16)
+
+
+### Bug Fixes
+
+* update release workflow to latest version ([66961ff](https://www.github.com/cheminfo-js/test/commit/66961ffc42d2efedfbdda837fe9cc2ed1771fa04))
+
 ## [8.0.0](https://www.github.com/cheminfo-js/test/compare/v7.2.1...v8.0.0) (2021-06-07)
 
 

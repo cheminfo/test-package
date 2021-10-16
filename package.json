@@ -11,34 +11,42 @@
   "bugs": {
     "url": "https://github.com/cheminfo-js/test/issues"
   },
-  "jest": {
-    "transform": {}
-  },
   "homepage": "https://github.com/cheminfo-js/test",
   "license": "MIT",
-  "main": "./src/index.js",
+  "files": [
+    "lib",
+    "lib-esm",
+    "src"
+  ],
+  "main": "./lib/index.js",
+  "module": "./lib-esm/index.js",
+  "types": "./lib/index.d.ts",
   "exports": {
     "require": "./lib/index.js",
-    "default": "./src/index.js"
+    "default": "./lib-esm/index.js"
   },
-  "type": "module",
   "scripts": {
-    "test": "npm run test-only && npm run eslint",
-    "test-only": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
-    "test-coverage": "npm run test-only -- --coverage",
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf lib lib-esm",
+    "eslint": "eslint src",
+    "prepack": "npm run tsc",
+    "prettier": "prettier --check src",
+    "prettier-write": "prettier --write src",
+    "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
+    "test-only": "jest --coverage",
     "build": "cheminfo-build",
-    "deploy": "echo 1",
-    "eslint": "echo 2"
+    "tsc": "npm run clean && npm run tsc-cjs && npm run tsc-esm",
+    "tsc-cjs": "tsc --project tsconfig.cjs.json",
+    "tsc-esm": "tsc --project tsconfig.esm.json"
   },
   "devDependencies": {
-    "cheminfo-build": "^1.1.6",
-    "jest": "^26.5.2"
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "all"
+    "@types/jest": "^27.0.2",
+    "cheminfo-build": "^1.1.11",
+    "eslint-config-cheminfo-typescript": "^10.1.1",
+    "jest": "^27.2.5",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
   }
 }

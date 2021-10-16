@@ -1,8 +1,8 @@
-import test, { value, incrementValue } from 'cheminfo-tools-test';
+import testLib, { value, incrementValue } from '../index.js';
 
 describe('testing the module', () => {
   it('should return 42', () => {
-    expect(test()).toBe(42);
+    expect(testLib()).toBe(42);
   });
   it('should increment', () => {
     expect(value).toBe(0);

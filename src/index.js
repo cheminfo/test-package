@@ -4,7 +4,7 @@
  * @returns {number} - The number.
  */
 export default function theDefaultExport() {
-  return 42;
+  return 40;
 }
 
 /**

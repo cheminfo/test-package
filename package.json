@@ -7,11 +7,11 @@
     "project"
   ],
   "author": "Michaël Zasso",
-  "repository": "cheminfo-js/test",
+  "repository": "cheminfo/test-package",
   "bugs": {
-    "url": "https://github.com/cheminfo-js/test/issues"
+    "url": "https://github.com/cheminfo/test-package/issues"
   },
-  "homepage": "https://github.com/cheminfo-js/test",
+  "homepage": "https://github.com/cheminfo/test-package",
   "license": "MIT",
   "files": [
     "lib",

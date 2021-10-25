@@ -5,7 +5,7 @@
 
 THIS IS A TEST!
 
-## [API documentaion](http://cheminfo-js.github.io/test/)
+## [API documentaion](http://cheminfo.github.io/test-package/)
 
 ## Development
 

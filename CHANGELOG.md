@@ -1,5 +1,22 @@
 # Changelog
 
+## [8.0.2](https://github.com/cheminfo/test-package/compare/v8.0.1...v8.0.2) (2022-10-13)
+
+
+### Performance Improvements
+
+* test ([7ed5513](https://github.com/cheminfo/test-package/commit/7ed55133506ce177af3da3e15e95030c9a1628f6))
+
+
+### Reverts
+
+* "perf: test" ([9664030](https://github.com/cheminfo/test-package/commit/96640305bcb236f0febc648dd8c6aa0f4b491db9))
+
+
+### Documentation
+
+* test changelog ([271deff](https://github.com/cheminfo/test-package/commit/271deffe3d8d7faead566af9a1a8d10dd9c82e73))
+
 ### [8.0.1](https://www.github.com/cheminfo-js/test/compare/v8.0.0...v8.0.1) (2021-10-16)
 
 

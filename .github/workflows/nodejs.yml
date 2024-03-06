@@ -8,7 +8,7 @@ on:
 
 jobs:
   nodejs:
-    uses: zakodium/workflows/.github/workflows/nodejs.yml@codecov-v4
+    uses: zakodium/workflows/.github/workflows/nodejs.yml@nodejs-v1
     with:
       lint-check-types: true
       upload-coverage: true

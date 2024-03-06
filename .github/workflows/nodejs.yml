@@ -10,5 +10,7 @@ jobs:
   nodejs:
     uses: zakodium/workflows/.github/workflows/nodejs.yml@nodejs-v1
     with:
-      node-version-matrix: '[14, 16]'
       lint-check-types: true
+      upload-coverage: true
+    secrets:
+      codecov-token: ${{ secrets.CODECOV_TOKEN }}

@@ -8,7 +8,6 @@ on:
 
 jobs:
   nodejs:
-    uses: zakodium/workflows/.github/workflows/nodejs.yml@nodejs-v1
+    uses: zakodium/workflows/.github/workflows/nodejs.yml@codecov-v4
     with:
-      node-version-matrix: '[14, 16]'
       lint-check-types: true

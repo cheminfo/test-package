@@ -1,1 +1,3 @@
 extends: [cheminfo-typescript, cheminfo-typescript/jsdoc]
+env:
+  jest: true

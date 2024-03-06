@@ -12,5 +12,5 @@ jobs:
     with:
       lint-check-types: true
       upload-coverage: true
-#    secrets:
-#      codecov-token: ${{ secrets.CODECOV_TOKEN }}
+    secrets:
+      codecov-token: ${{ secrets.CODECOV_TOKEN }}

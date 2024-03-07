@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.3](https://github.com/cheminfo/test-package/compare/v8.0.2...v8.0.3) (2024-03-07)
+
+
+### Bug Fixes
+
+* update dependencies ([3d18994](https://github.com/cheminfo/test-package/commit/3d1899437115cb1901cbf8301a833713d4db5f2d))
+
 ## [8.0.2](https://github.com/cheminfo/test-package/compare/v8.0.1...v8.0.2) (2022-10-13)
 
 

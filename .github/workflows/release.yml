@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    uses: zakodium/workflows/.github/workflows/release.yml@release-please-v4
+    uses: zakodium/workflows/.github/workflows/release.yml@release-v1
     with:
       npm: true
     secrets:

@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import testLib, { value, incrementValue } from '../index.js';
 
 describe('testing the module', () => {

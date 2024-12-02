@@ -1,5 +1,5 @@
 /**
- * Returns a very important number.*
+ * Returns a very important number.
  * @returns {number} - The number.
  */
 export default function theDefaultExport() {

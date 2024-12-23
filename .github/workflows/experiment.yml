@@ -4,7 +4,8 @@ on:
   pull_request:
 
 jobs:
-  deploy:
+  lint:
+    name: Linters
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

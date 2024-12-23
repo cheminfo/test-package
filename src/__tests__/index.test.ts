@@ -7,7 +7,8 @@ describe('testing the module', () => {
     expect(testLib()).toBe(42);
   });
   it('should increment', () => {
-    expect(value).toBe(0);
+    const expected: string = 0;
+    expect(value).toBe(expected);
     incrementValue();
     expect(value).toBe(1);
     incrementValue();

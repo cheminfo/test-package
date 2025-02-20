@@ -40,12 +40,12 @@
     "tsc-esm": "tsc --project tsconfig.esm.json"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^2.1.5",
-    "cheminfo-build": "^1.2.0",
+    "@vitest/coverage-v8": "^3.0.6",
+    "cheminfo-build": "^1.2.1",
     "eslint-config-cheminfo-typescript": "^17.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.1",
     "rimraf": "^6.0.1",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.5"
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
   }
 }

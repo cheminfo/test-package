@@ -12,4 +12,6 @@ jobs:
     with:
       lint-check-types: true
     secrets:
-      ENV_TEST: ${{ secrets.TEST }}
+      env : |
+        TEST1=${{ secrets.TEST }}
+        TEST2=inline-value

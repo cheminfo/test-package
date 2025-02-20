@@ -14,4 +14,4 @@ jobs:
     secrets:
       env : |
         TEST1=${{ secrets.TEST }}
-        TEST2=inline-value
+        TEST2=inline-value-2

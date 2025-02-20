@@ -12,4 +12,4 @@ jobs:
     with:
       lint-check-types: true
     secrets:
-      env: ${{ secrets.TEST }}
+      ENV_TEST: ${{ secrets.TEST }}

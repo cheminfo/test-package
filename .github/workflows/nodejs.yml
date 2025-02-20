@@ -8,6 +8,10 @@ on:
 
 jobs:
   nodejs:
-    uses: zakodium/workflows/.github/workflows/nodejs.yml@nodejs-v1
+    uses: zakodium/workflows/.github/workflows/nodejs.yml@secrets-env
     with:
       lint-check-types: true
+    secrets:
+      env: |
+        TEST1=abc
+        TEST2=${{ secrets.TEST }}

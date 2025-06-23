@@ -22,8 +22,10 @@
   "module": "./lib-esm/index.js",
   "types": "./lib/index.d.ts",
   "exports": {
-    "require": "./lib/index.js",
-    "default": "./lib-esm/index.js"
+    ".": {
+      "require": "./lib/index.js",
+      "default": "./lib-esm/index.js"
+    }
   },
   "scripts": {
     "check-types": "tsc --noEmit",

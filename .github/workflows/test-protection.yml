@@ -1,0 +1,33 @@
+name: Test branch protection rules
+
+on:
+  pull_request:
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      should-test1: ${{ steps.changes.outputs.test1 == 'true' }}
+      should-test2: ${{ steps.changes.outputs.test2 == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            test1:
+              - 'src/test1.js'
+            test2:
+              - 'src/index.js'
+  test1:
+    needs: prepare
+    if: ${{ needs.prepare.outputs.should-test1 }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test 1 passed"
+  test2:
+    needs: prepare
+    if: ${{ needs.prepare.outputs.should-test2 }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test 2 passed"

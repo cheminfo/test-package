@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.1.0](https://github.com/cheminfo/test-package/compare/v8.0.4...v8.1.0) (2025-12-10)
+
+
+### Features
+
+* add docker image on release ([3eaf6ae](https://github.com/cheminfo/test-package/commit/3eaf6ae4c1e91e8f19d29fb4f05f859a5f9837ca))
+
 ## [8.0.4](https://github.com/cheminfo/test-package/compare/v8.0.3...v8.0.4) (2024-12-02)
 
 

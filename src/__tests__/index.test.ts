@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import testLib, { incrementValue, value } from '../index.js';
+import testLib, { incrementValue, value } from '../index.ts';
 
 describe('testing the module', () => {
   it('should return 42', () => {

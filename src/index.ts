@@ -1,14 +1,13 @@
 /**
  * Returns a very important number.
- * @returns {number} - The number.
+ * @returns - The number.
  */
-export default function theDefaultExport() {
+export default function theDefaultExport(): number {
   return 42;
 }
 
 /**
  * Value that can be incremented.
- * @type {number}
  */
 export let value = 0;
 
@@ -21,7 +20,7 @@ export function incrementValue() {
 
 /**
  * Returns a cool value.
- * @returns {string} The cool value.
+ * @returns - The cool value.
  */
 export function feature() {
   return 'cool';
@@ -29,7 +28,7 @@ export function feature() {
 
 /**
  *  Returns something.
- * @returns {string} - Something.
+ * @returns - Something.
  */
 export function something() {
   return 'something';

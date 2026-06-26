@@ -1,0 +1,78 @@
+# =============================================================================
+# SSH to powernuc through the Headscale (self-hosted Tailscale) network
+# =============================================================================
+#
+# This workflow joins the cheminfo Headscale tailnet from a GitHub runner, then
+# opens an SSH connection to the `powernuc` machine and writes a file in /tmp.
+#
+# ----------------------------------------------------------------------------
+# Required repository secrets (Settings -> Secrets and variables -> Actions)
+# ----------------------------------------------------------------------------
+#
+# TAILSCALE_KEY   Headscale pre-auth key used to register the runner node.
+#                 Create it EPHEMERAL so the temporary runner node is removed
+#                 automatically when the job ends (otherwise dead nodes pile up):
+#
+#                   headscale preauthkeys create \
+#                     --user <user> --ephemeral --reusable --expiration 24h
+#
+# SSH_PRIVATE_KEY  The PRIVATE half of an SSH key pair (ed25519 recommended).
+#                  Generate the pair on your machine (no passphrase):
+#
+#                    ssh-keygen -t ed25519 -C "github-actions->powernuc" -f gha_powernuc
+#
+#                  - Put the PRIVATE key (gha_powernuc) in this secret, contents
+#                    copied verbatim including the BEGIN/END lines.
+#                  - Put the PUBLIC key (gha_powernuc.pub) on powernuc, appended
+#                    to /root/.ssh/authorized_keys (the workflow logs in as root):
+#
+#                      ssh-copy-id -i gha_powernuc.pub root@powernuc
+#                      # or manually: cat gha_powernuc.pub >> /root/.ssh/authorized_keys
+#
+# ----------------------------------------------------------------------------
+# DNS: how the bare name `powernuc` resolves
+# ----------------------------------------------------------------------------
+# Resolution relies on Headscale MagicDNS being enabled on the server
+# (dns.magic_dns: true + a base_domain) AND `--accept-dns=true` below, which lets
+# the runner use the tailnet resolver. If the bare name does not resolve, use the
+# FQDN (powernuc.<base_domain>) or the 100.x.y.z Tailscale IP instead. The
+# `tailscale status` step prints what the runner can see, to debug resolution.
+# =============================================================================
+
+name: SSH to powernuc
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ssh-powernuc:
+    runs-on: ubuntu-latest
+    steps:
+      # Official, maintained action: installs a pinned Tailscale release and runs
+      # `tailscale up` for us. Safer than piping a remote install script to sh.
+      # For maximum supply-chain safety, replace @v3 with a full commit SHA.
+      - name: Connect to the Headscale tailnet
+        uses: tailscale/github-action@v3
+        with:
+          authkey: ${{ secrets.TAILSCALE_KEY }}
+          hostname: github-actions-${{ github.run_id }}
+          args: --login-server=https://head.cheminfo.org --accept-dns=true
+
+      - name: Show tailnet status
+        run: tailscale status
+
+      - name: Write file on powernuc over SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          filename="$(date -u +'%Y-%m-%dT%H-%M-%SZ').txt"
+          ssh -o StrictHostKeyChecking=accept-new -i ~/.ssh/id_ed25519 \
+            root@powernuc \
+            "echo 'Hello world' > /tmp/$filename && echo wrote /tmp/$filename"
+
+      - name: Disconnect from the tailnet
+        if: always()
+        run: sudo tailscale logout || true
